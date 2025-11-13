@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d777d270cee3a5c419cb21a828556f1a, type: 3}
+  m_Name: CodeMonkeyFreeSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.01
+  subtype: kitchenchaos
+  lastShownTimestamp: 1762939506
+  lastUpdateResponse:
+    version: 1.01
+    versionUrl: https://unitycodemonkey.com
+  checkedLastUpdateTimestamp: 1762939506
+  lastQOTDResponse:
+    questionId: 240
+    questionText: 'What is the value stored in percentage?
+
+      <p>int health =
+      25;</p>
+
+      <p>int healthMax = 100;</p>
+
+      <p>float percentage = health
+      / healthMax;</p>'
+    answerA: 0.25f
+    answerB: 0
+    answerC: 2.5f
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1762939506
+  lastDynamicHeaderResponse:
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
+    topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
+    topLink: blackfriday
+    bottomText: My 10+ Years of C# Knowledge in 1 Course!
+    bottomLink: csharpcourse
+  lastDynamicHeaderTimestamp: 1762939506
+  websiteLatestMessage:
+    text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
+      Click here!</a>
+  websiteLatestMessageTimestamp: 1762939506
+  websiteLatestVideos:
+    videos:
+    - youTubeId: HSLVMh25YWo
+      title: BLACK FRIDAY Bundle Available NOW! Learn and Play!
+    - youTubeId: Gl0leX7gqVA
+      title: Dispelling the Unity looks bad MYTH!
+    - youTubeId: 0zljaBBiOXo
+      title: Unity turns 20! Get FREE Assets and Make Games!
+    - youTubeId: slMe3sbS_KM
+      title: What is Unity Studio?
+  websiteLatestVideosTimestamp: 1762939506
