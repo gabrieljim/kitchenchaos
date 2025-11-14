@@ -14,47 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1762939506
+  lastShownTimestamp: 1763055453
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1762939506
+  checkedLastUpdateTimestamp: 1763110159
   lastQOTDResponse:
-    questionId: 240
-    questionText: 'What is the value stored in percentage?
+    questionId: 241
+    questionText: 'What is the result of this code:
 
-      <p>int health =
-      25;</p>
+      <p>int money = 2000000000;
+      // $2 billion</p>
 
-      <p>int healthMax = 100;</p>
-
-      <p>float percentage = health
-      / healthMax;</p>'
-    answerA: 0.25f
-    answerB: 0
-    answerC: 2.5f
+      <p>money += 1000000000; // Adding $1 billion</p>'
+    answerA: money == 3000000000
+    answerB: money == -1294967296
+    answerC: money == 0
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1762939506
+  lastQotdTimestamp: 1763110159
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1762939506
+  lastDynamicHeaderTimestamp: 1763110159
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1762939506
+  websiteLatestMessageTimestamp: 1763110159
   websiteLatestVideos:
     videos:
+    - youTubeId: zbGWwfEhTzc
+      title: I wrote 3000 lines of code in 48 HOURS!
     - youTubeId: HSLVMh25YWo
       title: BLACK FRIDAY Bundle Available NOW! Learn and Play!
     - youTubeId: Gl0leX7gqVA
       title: Dispelling the Unity looks bad MYTH!
     - youTubeId: 0zljaBBiOXo
       title: Unity turns 20! Get FREE Assets and Make Games!
-    - youTubeId: slMe3sbS_KM
-      title: What is Unity Studio?
-  websiteLatestVideosTimestamp: 1762939506
+  websiteLatestVideosTimestamp: 1763110159
