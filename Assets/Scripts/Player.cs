@@ -6,14 +6,17 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameInput gameInput;
+    [SerializeField] private LayerMask countersLayerMask;
+
     private float rotateSpeed = 10f;
     private bool isWalking;
+    private Vector3 lastInteractDirection;
 
     private bool CapsuleCastCheckCollision(Vector3 moveDirection, float moveDistance)
     {
         const float playerRadius = .7f;
         const float playerHeight = 2f;
-        
+
         bool hasCollision = Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight,
             playerRadius, moveDirection, moveDistance);
 
@@ -22,11 +25,46 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        float moveDistance = movementSpeed * Time.deltaTime;
-        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
-        Vector3 moveDirection = new Vector3(inputVector.x, 0, inputVector.y);
+        HandleMovement();
+        HandleInteractions();
+    }
 
-        bool canMove = !CapsuleCastCheckCollision(moveDirection,  moveDistance);
+    public bool IsWalking()
+    {
+        return isWalking;
+    }
+
+    private Vector3 GetMoveDirection()
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        return new Vector3(inputVector.x, 0, inputVector.y);
+    }
+
+    private void HandleInteractions()
+    {
+        var moveDirection = GetMoveDirection();
+        if (moveDirection != Vector3.zero)
+        {
+            lastInteractDirection = moveDirection;
+        }
+
+        float interactDistance = 2f;
+        if (Physics.Raycast(transform.position, lastInteractDirection, out var raycastHit, interactDistance,
+                countersLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                clearCounter.Interact();
+            }
+        }
+    }
+
+    private void HandleMovement()
+    {
+        float moveDistance = movementSpeed * Time.deltaTime;
+        var moveDirection = GetMoveDirection();
+
+        bool canMove = !CapsuleCastCheckCollision(moveDirection, moveDistance);
 
         if (!canMove)
         {
@@ -61,10 +99,5 @@ public class Player : MonoBehaviour
 
         isWalking = moveDirection != Vector3.zero;
         transform.forward = Vector3.Slerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
-    }
-
-    public bool IsWalking()
-    {
-        return isWalking;
     }
 }
