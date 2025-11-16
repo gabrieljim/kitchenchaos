@@ -1,9 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public class OnSelectedCounterChangedEventArgs : EventArgs
+    {
+        public ClearCounter selectedCounter;
+
+        public OnSelectedCounterChangedEventArgs()
+        {
+        }
+
+        public OnSelectedCounterChangedEventArgs(ClearCounter selectedCounter)
+        {
+            this.selectedCounter = selectedCounter;
+        }
+    }
+
+    public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
+
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameInput gameInput;
     [SerializeField] private LayerMask countersLayerMask;
@@ -11,6 +28,7 @@ public class Player : MonoBehaviour
     private float rotateSpeed = 10f;
     private bool isWalking;
     private Vector3 lastInteractDirection;
+    private ClearCounter selectedCounter;
 
     private bool CapsuleCastCheckCollision(Vector3 moveDirection, float moveDistance)
     {
@@ -21,6 +39,19 @@ public class Player : MonoBehaviour
             playerRadius, moveDirection, moveDistance);
 
         return hasCollision;
+    }
+
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInputOnInteractAction;
+    }
+
+    private void GameInputOnInteractAction(object sender, EventArgs e)
+    {
+        if (selectedCounter != null)
+        {
+            selectedCounter.Interact();
+        }
     }
 
     private void Update()
@@ -54,8 +85,22 @@ public class Player : MonoBehaviour
         {
             if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
             {
-                clearCounter.Interact();
+                if (clearCounter != selectedCounter)
+                {
+                    selectedCounter = clearCounter;
+
+                    OnSelectedCounterChanged?.Invoke(this,
+                        new OnSelectedCounterChangedEventArgs { selectedCounter = selectedCounter });
+                }
             }
+            else
+            {
+                selectedCounter = null;
+            }
+        }
+        else
+        {
+            selectedCounter = null;
         }
     }
 
