@@ -5,18 +5,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError("There is more than one Player instance.");            
+        }
+        Instance = this;
+    }
+
     public class OnSelectedCounterChangedEventArgs : EventArgs
     {
         public ClearCounter selectedCounter;
-
-        public OnSelectedCounterChangedEventArgs()
-        {
-        }
-
-        public OnSelectedCounterChangedEventArgs(ClearCounter selectedCounter)
-        {
-            this.selectedCounter = selectedCounter;
-        }
     }
 
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
@@ -87,20 +89,17 @@ public class Player : MonoBehaviour
             {
                 if (clearCounter != selectedCounter)
                 {
-                    selectedCounter = clearCounter;
-
-                    OnSelectedCounterChanged?.Invoke(this,
-                        new OnSelectedCounterChangedEventArgs { selectedCounter = selectedCounter });
+                    SetSelectedCounter(clearCounter);
                 }
             }
             else
             {
-                selectedCounter = null;
+                SetSelectedCounter(null);
             }
         }
         else
         {
-            selectedCounter = null;
+            SetSelectedCounter(null);
         }
     }
 
@@ -144,5 +143,13 @@ public class Player : MonoBehaviour
 
         isWalking = moveDirection != Vector3.zero;
         transform.forward = Vector3.Slerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
+    }
+
+    private void SetSelectedCounter(ClearCounter selectedCounter)
+    {
+        this.selectedCounter = selectedCounter;
+
+        OnSelectedCounterChanged?.Invoke(this,
+            new OnSelectedCounterChangedEventArgs { selectedCounter = selectedCounter });
     }
 }
