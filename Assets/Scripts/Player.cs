@@ -119,7 +119,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
             // attempt only X movement
             Vector3 moveDirX = new Vector3(moveDirection.x, 0, 0).normalized;
-            canMove = !CapsuleCastCheckCollision(moveDirX, moveDistance);
+            canMove = moveDirection.x != 0 && !CapsuleCastCheckCollision(moveDirX, moveDistance);
 
             if (canMove)
             {
@@ -130,7 +130,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
                 // cannot move only on the X
                 // attempt only Z movement
                 Vector3 moveDirZ = new Vector3(0, 0, moveDirection.z).normalized;
-                canMove = !CapsuleCastCheckCollision(moveDirZ, moveDistance);
+                canMove = moveDirection.z != 0 && !CapsuleCastCheckCollision(moveDirZ, moveDistance);
 
                 if (canMove)
                 {
