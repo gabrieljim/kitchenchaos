@@ -14,31 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1763894649
+  lastShownTimestamp: 1764007160
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1763894649
+  checkedLastUpdateTimestamp: 1764007160
   lastQOTDResponse:
-    questionId: 244
-    questionText: What will happen on January 19, 2038 at 03:14:07?
-    answerA: Armagedon
-    answerB: End of Unix Time
-    answerC: Half-Life 3 release date
+    questionId: 245
+    questionText: 'Does this variable get reset when you load a different Scene?
+
+      <p>private
+      static int score;</p>'
+    answerA: Yes
+    answerB: No
+    answerC: Only when loading the Main Menu
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1763894649
+  lastQotdTimestamp: 1764007160
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1763894649
+  lastDynamicHeaderTimestamp: 1764007160
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1763894649
+  websiteLatestMessageTimestamp: 1764007160
   websiteLatestVideos:
     videos:
     - youTubeId: yC6IGLB4ySg
@@ -49,4 +52,4 @@ MonoBehaviour:
       title: The BIGGEST Unity Sale of the YEAR! (BLACK FRIDAY 95% OFF!)
     - youTubeId: abYJvA6IchM
       title: Avoid these Beginner C# MISTAKES! (Code Review)
-  websiteLatestVideosTimestamp: 1763894649
+  websiteLatestVideosTimestamp: 1764007160
