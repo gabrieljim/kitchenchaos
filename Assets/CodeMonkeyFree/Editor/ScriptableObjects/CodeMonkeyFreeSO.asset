@@ -14,42 +14,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1764007160
+  lastShownTimestamp: 1764359498
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1764007160
+  checkedLastUpdateTimestamp: 1764359498
   lastQOTDResponse:
-    questionId: 245
-    questionText: 'Does this variable get reset when you load a different Scene?
+    questionId: 246
+    questionText: 'When would this code cause an error?
 
-      <p>private
-      static int score;</p>'
-    answerA: Yes
-    answerB: No
-    answerC: Only when loading the Main Menu
+      <p>Building closest
+      = null;</p>
+
+      <p>for (int i = 0; i &lt; instanceList.Count; i++) {</p>
+
+      <p>&nbsp;
+      &nbsp; if (Vector3.Distance(position, instanceList[i].GetPosition()) &lt; Vector3.Distance(position,
+      closest.GetPosition())) {</p>
+
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; closest
+      = instanceList[i];</p>
+
+      <p>&nbsp; &nbsp; }</p>
+
+      <p>}</p>
+
+      <p>return
+      closest;</p>'
+    answerA: When instanceList is empty
+    answerB: When instanceList has at least one element
+    answerC: When instanceList has exactly two elements
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1764007160
+  lastQotdTimestamp: 1764359498
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1764007160
+  lastDynamicHeaderTimestamp: 1764359498
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1764007160
+  websiteLatestMessageTimestamp: 1764359498
   websiteLatestVideos:
     videos:
+    - youTubeId: UzddfPG2zr4
+      title: The FUTURE of Unity! (and Unity 7 is DEAD!)
+    - youTubeId: Z_R-gcTuMrI
+      title: TOP 10 NEW Games, Made with Unity! (OCTOBER 2025)
     - youTubeId: yC6IGLB4ySg
       title: Make Games FASTER (90% Compilation Speed BOOST!)
     - youTubeId: 6JDErIMOUjM
       title: Unity INSIDE Unreal Engine?! WHAT IS GOING ON?!
-    - youTubeId: vB0ApsVWET8
-      title: The BIGGEST Unity Sale of the YEAR! (BLACK FRIDAY 95% OFF!)
-    - youTubeId: abYJvA6IchM
-      title: Avoid these Beginner C# MISTAKES! (Code Review)
-  websiteLatestVideosTimestamp: 1764007160
+  websiteLatestVideosTimestamp: 1764359498
