@@ -14,58 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1764359498
+  lastShownTimestamp: 1764527627
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1764359498
+  checkedLastUpdateTimestamp: 1764527627
   lastQOTDResponse:
-    questionId: 246
-    questionText: 'When would this code cause an error?
+    questionId: 247
+    questionText: 'If I do:
 
-      <p>Building closest
-      = null;</p>
+      <p>Instantiate(myPrefab, Input.mousePosition,
+      Quaternion.identity);</p>
 
-      <p>for (int i = 0; i &lt; instanceList.Count; i++) {</p>
-
-      <p>&nbsp;
-      &nbsp; if (Vector3.Distance(position, instanceList[i].GetPosition()) &lt; Vector3.Distance(position,
-      closest.GetPosition())) {</p>
-
-      <p>&nbsp; &nbsp; &nbsp; &nbsp; closest
-      = instanceList[i];</p>
-
-      <p>&nbsp; &nbsp; }</p>
-
-      <p>}</p>
-
-      <p>return
-      closest;</p>'
-    answerA: When instanceList is empty
-    answerB: When instanceList has at least one element
-    answerC: When instanceList has exactly two elements
+      <p>Will myPrefab be spawned under the mouse?</p>'
+    answerA: Yes
+    answerB: No
+    answerC: 
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1764359498
+  lastQotdTimestamp: 1764527627
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/cmBlackFriday2025.png
     topText: Get my BLACK FRIDAY Bundle! Available now with Live Chat!
     topLink: blackfriday
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1764359498
+  lastDynamicHeaderTimestamp: 1764527627
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1764359498
+  websiteLatestMessageTimestamp: 1764527627
   websiteLatestVideos:
     videos:
+    - youTubeId: uYkVz724eng
+      title: TOP 10 NEW Tools AND Visuals NOVEMBER 2025!
     - youTubeId: UzddfPG2zr4
       title: The FUTURE of Unity! (and Unity 7 is DEAD!)
     - youTubeId: Z_R-gcTuMrI
       title: TOP 10 NEW Games, Made with Unity! (OCTOBER 2025)
     - youTubeId: yC6IGLB4ySg
       title: Make Games FASTER (90% Compilation Speed BOOST!)
-    - youTubeId: 6JDErIMOUjM
-      title: Unity INSIDE Unreal Engine?! WHAT IS GOING ON?!
-  websiteLatestVideosTimestamp: 1764359498
+  websiteLatestVideosTimestamp: 1764527627
