@@ -235,38 +235,32 @@ PrefabInstance:
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[0].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 8d097cab2eaf7df449883a9444e485e1,
-        type: 3}
+      objectReference: {fileID: 5748418891934017259}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[1].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 857ec3cb1954bc24298245d0e7691379,
-        type: 3}
+      objectReference: {fileID: 5748418892182973989}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[2].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 5fc1a80770c64664c8763ab0ff0be909,
-        type: 3}
+      objectReference: {fileID: 5748418893627708915}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[3].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 90c9117fe8b47e940b20a7c0b7c668f4,
-        type: 3}
+      objectReference: {fileID: 5748418893386617383}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[4].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 80229bcf09ed6904ba92009c723b6073,
-        type: 3}
+      objectReference: {fileID: 5748418892204505193}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[5].gameObject
       value: 
-      objectReference: {fileID: 3707720086447189547, guid: 040fe26436fd3e74297b3551f8f1883b,
-        type: 3}
+      objectReference: {fileID: 5520578769235923065}
     - target: {fileID: 7595548201932900543, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[6].gameObject
@@ -332,6 +326,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e39c981f2de6441b54efde32ced8f0, type: 3}
+--- !u!1 &5520578769235923065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3611271270719445377, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5748418891934017259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550707552663613203, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5748418892182973989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550707552375629789, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5748418892204505193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550707552397226385, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5748418893386617383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550707550894988255, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5748418893627708915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3550707551136013323, guid: 10e39c981f2de6441b54efde32ced8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 9115524456449608184}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8875596017771199708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408889407006782756, guid: 10e39c981f2de6441b54efde32ced8f0,

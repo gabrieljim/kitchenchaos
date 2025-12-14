@@ -22,10 +22,13 @@ public class PlateCompleteVisual : MonoBehaviour
 
     private void PlateKitchenObjectOnIngredientAdded(object sender, PlateKitchenObject.OnIngredientAddedEventArgs e)
     {
+        Debug.Log("Adding to visual");
         foreach (KitchenObjectSO_GameObject kitchenObjectSOGameObject in kitchenObjectSOGameObjectList)
         {
             if (kitchenObjectSOGameObject.kitchenObjectSO == e.kitchenObjectSO)
             {
+                Debug.Log("Setting active");
+                Debug.Log(e.kitchenObjectSO);
                 kitchenObjectSOGameObject.gameObject.SetActive(true);
             }
         }
