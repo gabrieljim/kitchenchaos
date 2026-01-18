@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     [SerializeField] private Transform kitchenObjectHoldPoint;
     private KitchenObject kitchenObject;
 
+    public event EventHandler OnPickedSomething;
+
     private void Awake()
     {
         if (Instance != null)
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     private void GameInputOnInteractAction(object sender, EventArgs e)
     {
+        if (!KitchenGameManager.Instance.IsGamePlaying()) return;
         if (selectedCounter != null)
         {
             selectedCounter.Interact(this);
@@ -62,6 +65,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     private void GameInputOnInteractAlternateAction(object sender, EventArgs e)
     {
+        if (!KitchenGameManager.Instance.IsGamePlaying()) return;
         selectedCounter.InteractAlternate(this);
     }
 
@@ -170,6 +174,11 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public void SetKitchenObject(KitchenObject kitchenObject)
     {
         this.kitchenObject = kitchenObject;
+
+        if (kitchenObject != null)
+        {
+            OnPickedSomething?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     public KitchenObject GetKitchenObject()

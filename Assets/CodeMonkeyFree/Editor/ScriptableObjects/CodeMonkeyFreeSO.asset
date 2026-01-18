@@ -14,25 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1768646293
+  lastShownTimestamp: 1768749246
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1768646293
+  checkedLastUpdateTimestamp: 1768749246
   lastQOTDResponse:
-    questionId: 262
-    questionText: 'What will be the value of isOne?
+    questionId: 263
+    questionText: 'Let''s say I saved my game data in a text file and I am now trying
+      to load it, does this work?
 
-      <p>float oneThird = 1f
-      / 3f;</p>
+      <p>string savedHealthData = "100";</p>
 
-      <p>bool isOne = (oneThird * 3f) == 1f;</p>'
-    answerA: true
-    answerB: false
-    answerC: 
+      <p>int
+      healthAmount = savedHealthData;</p>'
+    answerA: Yes
+    answerB: No
+    answerC: Yes but healthAmount will be 0
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1768646293
+  lastQotdTimestamp: 1768749246
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
     topText: Get my Toolkit! 40 Tools and Elements to help you make games BETTER
@@ -40,19 +41,19 @@ MonoBehaviour:
     topLink: toolkit
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1768646293
+  lastDynamicHeaderTimestamp: 1768749246
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1768646293
+  websiteLatestMessageTimestamp: 1768749246
   websiteLatestVideos:
     videos:
+    - youTubeId: 3hrhAS-q3Z0
+      title: TOP 10 FREE NEW Assets JANUARY 2026!
     - youTubeId: cWKA_FTprj0
       title: TOP 10 NEW Games, Made with Unity! (DECEMBER 2025)
     - youTubeId: mJk727yG7qw
       title: Tips from making 2-3-4 Games!
     - youTubeId: Jgw5Z40Q1vc
       title: Learn Problem Solving (FREE Course, MOST VALUABLE skill)
-    - youTubeId: t_-jmK-qXss
-      title: Learn the MOST VALUABLE Skill Tomorrow!
-  websiteLatestVideosTimestamp: 1768646293
+  websiteLatestVideosTimestamp: 1768749246
