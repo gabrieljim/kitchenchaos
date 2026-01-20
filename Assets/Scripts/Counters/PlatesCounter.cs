@@ -35,7 +35,7 @@ public class PlatesCounter : BaseCounter
         if (!player.HasKitchenObject())
         {
             // empty-handed
-            if (platesSpawnedAmount > 0)
+            if (KitchenGameManager.Instance.IsGamePlaying() && platesSpawnedAmount > 0)
             {
                 // at least one plate here
                 platesSpawnedAmount--;
